@@ -36,6 +36,7 @@ export async function POST(request: Request){
                 existingUserByEmail.verifyCode = verifyCode;
                 existingUserByEmail.verifyCodeExpiry = new Date(Date.now() + 3600000)
                 await existingUserByEmail.save()
+                
             }
 
         }else{
