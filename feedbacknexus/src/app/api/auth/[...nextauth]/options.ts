@@ -41,5 +41,10 @@ export const authOptions : NextAuthOptions = {
               }
         })
     ],
-    // 24:00
+    pages:{
+        signIn:"/sign-in"
+    },
+    session:{
+        strategy:"jwt"
+    }
 }
